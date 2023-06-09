@@ -1,32 +1,32 @@
-# proyecto-web-01
+# Proyecto web 01
 Sitio web que muestra información variada de una iglesia
 
 Sitio web creado con:
-**- HTML:**	Permite crear la estructura del sitio web mediante etiquetas
-**- CSS:**	Para definir y crear la presentación o estética del sitio web
-**-JavaScript:**	Añade características que permite agregar e implementar acciones interactivas al sitio web
-**-PHP:**	Favorece la conexión entre los servidores y la interfaz de usuario
+- **HTML:**	Permite crear la estructura del sitio web mediante etiquetas
+- **CSS:**	Para definir y crear la presentación o estética del sitio web
+- **JavaScript:**	Añade características que permite agregar e implementar acciones interactivas al sitio web
+- **PHP:**	Favorece la conexión entre los servidores y la interfaz de usuario
 
 Este sitio web fue creado y desarrollado usando la plataforma **NetBeans 12.0.** Además está adaptado para ejecutarse en dispositivos móviles.
 
 El archivo **index.php** es el que contiene la página de inicio o página principal del sitio web.
 
 La página de inicio o principal consta de tres secciones: 
-**- Un encabezado:**	donde se muestra el logotipo de la organización
-**- Una sección principal:**	integra los contenidos más relevantes de presentación de la organización 
-**- Un pie de página:** 	muestra la información de contacto de la organización
+- **Un encabezado:**	donde se muestra el logotipo de la organización
+- **Una sección principal:**	integra los contenidos más relevantes de presentación de la organización 
+- **Un pie de página:** 	muestra la información de contacto de la organización
 
 El menú principal consta de cuatro opciones: 
-**- Quienes somos:**	muestra la información que define la identidad de la organización. Integra un submenú con seis opciones adicionales, las cuales describen aspectos tales como la visión, la misión, los valores, entre otros, de la organización
-**- Reflexiones:**	página dedicada a publicar artículos, noticias, mensajes y/o reflexiones con contenido bíblico
-**- Actividades:**	muestra las actividades que va a realizar la organización durante el mes en curso; así como las actividades que se van a realizar en fechas posteriores 
-**- Contáctenos:**	consta de dos secciones: un formulario de contacto para que la persona pueda ponerse en contacto con la organización y un mapa que muestra la ubicación junto con datos adicionales de contacto
+- **Quienes somos:**	muestra la información que define la identidad de la organización. Integra un submenú con seis opciones adicionales, las cuales describen aspectos tales como la visión, la misión, los valores, entre otros, de la organización
+- **Reflexiones:**	página dedicada a publicar artículos, noticias, mensajes y/o reflexiones con contenido bíblico
+- **Actividades:**	muestra las actividades que va a realizar la organización durante el mes en curso; así como las actividades que se van a realizar en fechas posteriores 
+- **Contáctenos:**	consta de dos secciones: un formulario de contacto para que la persona pueda ponerse en contacto con la organización y un mapa que muestra la ubicación junto con datos adicionales de contacto
 
 En cada archivo de estilos CSS se utiliza la técnica de rejilla **CSS Grid Layout** para organizar de manera más eficiente cada elemento de la interfaz del sitio web, el cual los acomoda tanto a lo largo como a lo ancho de la ventana del navegador. Además, es complementado con **Flexbox**, el cual ayuda a distribuir el espacio entre los ítems de la interfaz y mejora las capacidades de alineación de cada elemento en filas o columnas.
 
 Para el formulario de contacto se programaron validaciones tanto del lado del cliente utilizando JavaScript; así como del lado del servidor programado con PHP.
 
-Para enviar la información del usuario a través del formulario de contacto se utiliza una herramienta  llamada PHPMailer. Esta es una clase escrita con php para enviar emails basada en el componente active server ASPMail. Permite de una forma sencilla tareas complejas como por ejemplo:
+Para enviar la información del usuario a través del formulario de contacto se utiliza una herramienta  llamada **PHPMailer.** Esta es una clase escrita con php para enviar emails basada en el componente active server ASPMail. Permite de una forma sencilla tareas complejas como por ejemplo:
 - Enviar mensajes de correo con ficheros adjuntos (attachments) 
 - Enviar mensajes de correo en formato HTML 
 - Enviar emails via sendmail, PHP mail(), o con SMTP.
