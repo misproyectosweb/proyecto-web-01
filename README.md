@@ -34,6 +34,7 @@ Para enviar la información del usuario a través del formulario de contacto se 
 A continuación se presentan algunas imágenes del sitio web brevemente descrito anteriormente:
 
 ![01  Inicio_1](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/070dddf3-d201-4478-a03a-c6904848e843)
+**==========================================================================**
 ![01  Inicio_2](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/78b5f2fb-e6b8-4b85-8606-4a45e958894d)
 ![01  Inicio_3](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/a3b795fc-62cc-423a-a359-dbb2b9edf150)
 ![02  QS_Nuestra visión_1](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/3e628051-7766-4548-b366-02138887710f)
