@@ -1,7 +1,8 @@
 # Proyecto web 01
-Sitio web que muestra información variada de una iglesia
+Sitio web que muestra y describe la información de los servicios que ofrece una iglesia
 
-Sitio web creado con:
+Sitio web creado con las siguientes herramientas a nivel de front-end y back-end:
+
 - **HTML:**	Permite crear la estructura del sitio web mediante etiquetas
 - **CSS:**	Para definir y crear la presentación o estética del sitio web
 - **JavaScript:**	Añade características que permite agregar e implementar acciones interactivas al sitio web
