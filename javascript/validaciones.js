@@ -34,7 +34,7 @@ function mensaje() {
         if('exito') {
             Swal.fire({
                 icon: 'success',
-                imageUrl: 'imagenes/Logo_iglesia_color.png',        
+                imageUrl: 'imagenes/LogoIglesiaColor.png',        
                 imageAlt: 'logo de la iglesia',
                 imageWidth: 300,
                 imageHeight: 90,
@@ -45,7 +45,7 @@ function mensaje() {
         else {
             Swal.fire({
                 icon: 'error',
-                imageUrl: 'imagenes/Logo_iglesia_color.png',        
+                imageUrl: 'imagenes/LogoIglesiaColor.png',        
                 imageAlt: 'logo de la iglesia',
                 imageWidth: 300,
                 imageHeight: 90,
@@ -130,8 +130,8 @@ function validaciones() {
     // los campos del formulario y se ejecuta las instrucciones para enviar los datos a la cuenta de correo
     // especificada   
     formulario.addEventListener('submit', (e) => {
-
-        //Evita aplicar la función que tiene asignado por defecto el elemento
+        
+        // Evita aplicar la función que tiene asignado por defecto el elemento
         e.preventDefault();
         
         // Se llama a la función que muestra el mensaje de alerta

@@ -7,9 +7,9 @@
         <title>Contacto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono_iglesia.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/iconoIglesia.png"/>
         <link href="librerias/normalize.css" rel="stylesheet" type="text/css"/>
         <link href="librerias/sweetalert2.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/contacto.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
                 
                 <!-- ***** Inicio sección logotipo encabezado ***** -->
                 <div class="logo">
-                    <a href="index.php"><img src="imagenes/Logo_iglesia_color.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
+                    <a href="index.php"><img src="imagenes/LogoIglesiaColor.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
                     <a href="#" class="btnMenu" id="btnMenu"><i class="icono fas fa-bars"></i></a>
                 </div>
                 <!-- ***** Fin sección logotipo encabezado ***** -->
@@ -59,8 +59,7 @@
                             <div class="grupo formulario_grupo" id="grupo_nombre">                                
                                 <div class="formulario_grupo_input">
                                     <label for="nombre" class="frmLabel">Nombre:</label>
-                                    <input type="text" class="formulario_input" id="nombre" name="nombre" value="<?php if(isset($nombre)){ echo $nombre; } ?>"
-                                           placeholder="Escribe tu nombre aquí">
+                                    <input type="text" class="formulario_input" id="nombre" name="nombre" value="" placeholder="Escribe tu nombre aquí" required>
                                     <i class="formulario_validacion_estado fas fa-times-circle"></i>
                                 </div>
                                 <p class="formulario_input_error">Error: Debes agregar nombre y dos apellidos y solamente se permiten letras</p>
@@ -70,8 +69,7 @@
                             <div class=" grupo formulario_grupo" id="grupo_telefono">                                
                                 <div class="formulario_grupo_input">
                                     <label for="telefono" class="frmLabel">Teléfono:</label>
-                                    <input type="text" class="formulario_input" id="telefono" name="telefono" value="<?php if(isset($telefono)){ echo $telefono; } ?>"
-                                           placeholder="22223333">
+                                    <input type="text" class="formulario_input" id="telefono" name="telefono" value="" placeholder="22223333" required>
                                     <i class="formulario_validacion_estado fas fa-times-circle"></i>
                                 </div>
                                 <p class="formulario_input_error">Error: No se permiten letras, espacios ni símbolos como número telefónico</p>
@@ -81,8 +79,7 @@
                             <div class=" grupo formulario_grupo" id="grupo_correo">                                
                                 <div class="formulario_grupo_input">
                                     <label for="correo" class="frmLabel">Correo:</label>
-                                    <input type="text" class="formulario_input" id="correo" name="correo" value="<?php if(isset($correo)){ echo $correo; }?>"
-                                           placeholder="correo@correo.com">
+                                    <input type="text" class="formulario_input" id="correo" name="correo" value="" placeholder="correo@correo.com" required>
                                     <i class="formulario_validacion_estado fas fa-times-circle"></i>
                                 </div>
                                 <p class="formulario_input_error">Error: Has escrito mal tu dirección de correo</p>

@@ -7,10 +7,9 @@
         <title>Actividades</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono_iglesia.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/iconoIglesia.png"/>
         <link href="librerias/normalize.css" rel="stylesheet" type="text/css"/>        
         <link href="css/actividades.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -20,7 +19,7 @@
                 
                 <!-- ***** Inicio sección logotipo encabezado ***** -->
                 <div class="logo">
-                    <a href="index.php"><img src="imagenes/Logo_iglesia_color.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
+                    <a href="index.php"><img src="imagenes/LogoIglesiaColor.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
                     <a href="#" class="btnMenu" id="btnMenu"><i class="icono fas fa-bars"></i></a>
                 </div>
                 <!-- ***** Fin sección logotipo encabezado ***** -->
@@ -34,7 +33,7 @@
                 </nav>                                                    
                 <!-- ***** Fin sección menú de opciones ***** -->
                 
-            </header>                        
+            </header>                         
                                                 
             <!-- ***** Inicio sección principal ***** -->
             <main class="contenido">
@@ -50,7 +49,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-church"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -58,7 +57,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-church"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -66,7 +65,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-church"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -74,7 +73,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-church"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -82,7 +81,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-church"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div class="grupoDos">
@@ -93,7 +92,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-pray"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -101,7 +100,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-pray"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -109,7 +108,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-pray"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -117,7 +116,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-pray"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>                        
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                        
                             </div>
                             <div class="actividad">
                                 <div>
@@ -125,7 +124,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-pray"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -139,7 +138,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-bible"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -147,7 +146,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-bible"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -155,7 +154,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-bible"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="actividad">
                                 <div>
@@ -163,7 +162,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-bible"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>                        
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                        
                             </div>
                             <div class="actividad">
                                 <div>
@@ -171,7 +170,7 @@
                                     <div class="mes" id="mes"></div>
                                 </div>
                                 <i class="fas fa-bible"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>                      
                         </div>
                         <div class="grupoCuatro">
@@ -238,10 +237,10 @@
                             </div>
                         </div>    
                         <div class="actividadEspecial">
-                            <img src="imagenes/imgActividad_1.jpg" class="imgActividad img img-1" alt="Afiche actividad de evangelismo"/>
+                            <img src="imagenes/imgActividad_1.jpg" class="imgActividad img img-1" alt=""/>
                         </div>
                         <div class="actividadEspecial">
-                            <img src="imagenes/imgActividad_2.jpg" class="imgActividad img img-2" alt="Afiche actividad de evangelismo"/>
+                            <img src="imagenes/imgActividad_2.jpg" class="imgActividad img img-2" alt=""/>
                         </div>
                         
                         <!-- Contenedor el cual permite cargar la imagen de la actividad -->

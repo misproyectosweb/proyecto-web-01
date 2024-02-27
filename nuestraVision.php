@@ -7,9 +7,9 @@
         <title>Nuestra visión</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono_iglesia.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/iconoIglesia.png"/>
         <link href="librerias/normalize.css" rel="stylesheet" type="text/css"/>
         <link href="css/nuestraVision.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -19,7 +19,7 @@
                                 
                 <!-- ***** Inicio sección logotipo encabezado ***** -->
                 <div class="logo">
-                    <a href="index.php"><img src="imagenes/Logo_iglesia_color.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
+                    <a href="index.php"><img src="imagenes/LogoIglesiaColor.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
                     <a href="#" class="btnMenu" id="btnMenu"><i class="icono fas fa-bars"></i></a>
                 </div>
                 <!-- ***** Fin sección logotipo encabezado ***** -->
@@ -27,9 +27,9 @@
                 <!-- ***** Inicio sección menú de opciones ***** -->                
                 <nav class="menu" id="menu">                                    
                     <a href="nuestraMision.php"><i class="fas fa-hiking"></i>Nuestra misión</a>
-                    <a href="nuestroPerfil.php"><i class="fas fa-user-tie"></i>Nuestro perfil</a>
+                    <a href="nuestroPerfil.php"><i class="fa-solid fa-house"></i>Nuestro perfil</a>
                     <a href="nuestraEstrategia.php"><i class="fas fa-tasks"></i>Nuestra estrategia</a>
-                    <a href="nuestraVivenciaReino.php"><i class="fas fa-hands-helping"></i>Nuestra vivencia del reino</a>
+                    <a href="nuestraVivenciaReino.php"><i class="fa fa-crown"></i>Nuestra vivencia del reino</a>
                     <a href="nuestrosValores.php"><i class="fas fa-award"></i>Nuestros valores</a>
                     <a href="index.php"><i class="fas fa-sign-out-alt"></i>Salir</a>                                        
                 </nav>                
@@ -41,7 +41,7 @@
             <main class="contenido">                    
                 <section>
                     <article>
-                        <h1><i class="fas fa-hand-holding-heart"></i>&nbsp;Nuestra visión</h1>
+                        <h1><i class="fa fa-globe"></i>&nbsp;Nuestra visión</h1>
                         <hr>                
                         <figure>
                             <img src="imagenes/nuestraVision.jpg" alt=""/>

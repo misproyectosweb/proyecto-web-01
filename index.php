@@ -10,13 +10,13 @@
         <meta name="keywords" content="Iglesia, Hacienda, Rey, invitar, acompañar, adorar, formar, amar, servir, enseñar, solidaridad, doctrina"/>
         <meta name="description" content="Bienvenidos a la página web de la Iglesia Hacienda del Rey, donde encontrará noticias, articulos y mucha más información para tu crecimiento espiritual"/>                
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">                          
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">        
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono_iglesia.png"/>        
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/iconoIglesia.png"/>        
         <link href="librerias/normalize.css" rel="stylesheet" type="text/css"/>                 
-        <link href="css/index.css" rel="stylesheet" type="text/css"/>        
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>         
     </head>
     <body>
         <div class="contenedor">
@@ -24,7 +24,7 @@
             <!--  ***** Inicio sección encabezado ***** -->            
             <header class="encabezado">            
                 <div class="logo">
-                    <img src="imagenes/Logo_iglesia_color.png" alt="Logo oficial de la iglesia Hacienda del Rey"/>
+                    <img src="imagenes/LogoIglesiaColor.png" alt="Logo oficial de la iglesia Hacienda del Rey"/>
                 </div>                  
             </header>
             <!--  ***** Fin sección encabezado ***** -->
@@ -34,7 +34,7 @@
                 
                 <!--  ***** Inicio sección títulos ***** -->
                 <div class="textoTitulos">
-                    <img src="imagenes/bordes_pq_4.png" class="imgBorde" alt=""/>
+                    <img src="imagenes/borde.png" class="imgBorde" alt=""/>
                     <p class="borde">"Mira que te mando, que te esfuerces y seas valiente; no temas ni desmayes,<br> porque Jehová, tu Dios, estará contigo dondequiera que vayas"<br>Josué 1:9</p>
                 </div>     
                 <!--  ***** Fin sección títulos ***** -->
@@ -71,13 +71,17 @@
                 <!--  ***** Inicio sección galería de imágenes ***** -->
                 <div class="contenedor-slideshow" id="slideshow">
                     <div class="contenedor-imagenes">                                                
-                         <div><img src="imagenes/textobiblico_1.jpg" class="imgSlide" alt=""/></div>
-                         <div><img src="imagenes/textobiblico_2.jpg" class="imgSlide" alt=""/></div>
-                         <div><img src="imagenes/textobiblico_3.jpg" class="imgSlide" alt=""/></div>
-                         <div><img src="imagenes/textobiblico_4.jpg" class="imgSlide" alt=""/></div>                                                                                                 
+                         <div><img src="imagenes/imgVersiculo_1.jpg" class="imgSlide" alt=""/></div>
+                         <div><img src="imagenes/imgVersiculo_2.jpg" class="imgSlide" alt=""/></div>
+                         <div><img src="imagenes/imgVersiculo_3.jpg" class="imgSlide" alt=""/></div>
+                         <div><img src="imagenes/imgVersiculo_4.jpg" class="imgSlide" alt=""/></div>                                                                                                 
                      </div>
                  </div>
                 <!--  ***** Fin sección galería de imágenes ***** -->
+                
+            </main>
+            
+            <footer class="contenedorPiepagina">
                 
                 <!--  ***** Inicio efecto de onda ***** -->
                 <div class="wave">
@@ -86,66 +90,66 @@
                     </svg>
                 </div>
                 <!--  ***** Fin efecto de onda ***** -->
-            </main>
-            
-            <!-- ***** Inicio sección pie de página ***** -->
-            <footer class="contenedorPiepagina">
-                                                                
-                <!-- ***** Inicio sección logo iglesia ***** -->
-                <div class="columna-logo" data-aos="zoom-in-down" data-aos-duration="1500">
-                    <img src="imagenes/Logo_iglesia_blanco.png" alt=""/>
-                </div>                
-                <!-- ***** Fin sección logo iglesia ***** -->
-                
-                <!-- ***** Inicio sección conociendo la iglesia ***** -->
-                <div class="columna-menu" data-aos="zoom-in-down" data-aos-duration="1500">
-                    <h2>Conozca nuestra iglesia:</h2>
-                    <ul>
-                        <li><a href="nuestraVision.php">Quiénes somos</a></li>
-                        <li><a href="reflexiones.php">Reflexiones</a></li>
-                        <li><a href="actividades.php">Actividades</a></li>
-                        <li><a href="contacto.php">Contáctenos</a></li>
-                    </ul>                                                                                                
-                </div>
-                <!-- ***** Fin sección conociendo la iglesia ***** -->
-                
-                <!-- ***** Inicio sección redes sociales ***** -->
-                <div class="columna-redes" data-aos="zoom-in-down" data-aos-duration="1500">
-                    <h2>Siganos en redes por:</h2>
-                    <div class="redes">
-                        <i class="icono fab fa-facebook-f"></i>
-                        <a href="#"><label>Facebook</label></a>
+                                
+                <div class="contenidoFooter">
+                    
+                    <!-- ***** Inicio sección logo iglesia ***** -->
+                    <div class="columna-logo">
+                        <img src="imagenes/LogoIglesiaBlanco.png" alt=""/>
+                    </div>                
+                    <!-- ***** Fin sección logo iglesia ***** -->
+                    
+                    <!-- ***** Inicio sección conociendo la iglesia ***** -->
+                    <div class="columna-menu">
+                        <h2>Conozca nuestra iglesia:</h2>
+                        <ul>
+                            <li><a href="nuestraVision.php">Quiénes somos</a></li>
+                            <li><a href="reflexiones.php">Reflexiones</a></li>
+                            <li><a href="actividades.php">Actividades</a></li>
+                            <li><a href="contacto.php">Contáctenos</a></li>
+                        </ul>                                                                                                
                     </div>
-                    <div class="redes">
-                        <i class="icono fab fa-whatsapp"></i>                        
-                        <a href="#"><label>Whatsapp</label></a>
+                    <!-- ***** Fin sección conociendo la iglesia ***** -->
+                    
+                    <!-- ***** Inicio sección redes sociales ***** -->
+                    <div class="columna-redes">
+                        <h2>Siganos en redes por:</h2>
+                        <div class="redes">
+                            <i class="icono fab fa-facebook-f"></i>
+                            <a href="#"><label>Facebook</label></a>
+                        </div>
+                        <div class="redes">
+                            <i class="icono fab fa-whatsapp"></i>                        
+                            <a href="#"><label>Whatsapp</label></a>
+                        </div>
+                        <div class="redes">
+                            <i class="icono fab fa-instagram"></i>
+                            <a href="#"><label>Instagram</label></a>
+                        </div>
                     </div>
-                    <div class="redes">
-                        <i class="icono fab fa-instagram"></i>
-                        <a href="#"><label>Instagram</label></a>
-                    </div>
-                </div>
-                <!-- ***** Fin sección redes sociales ***** -->
-                
-                <div class="columna-contacto" data-aos="zoom-in-down" data-aos-duration="1500">
-                    <h2>Información de contacto:</h2>
-                    <div class="datos">
-                        <i class="icono fab fa-waze"></i>                        
-                        <a href="contacto.php">Moravia, Romeral, diagonal 53</a>                        
-                    </div>
+                    <!-- ***** Fin sección redes sociales ***** -->
+                    
+                    <div class="columna-contacto">
+                        <h2>Información de contacto:</h2>
+                        <div class="datos">
+                            <i class="icono fab fa-waze"></i>                        
+                            <a href="contacto.php">Moravia, Romeral, diagonal 53</a>                        
+                        </div>
 
-                    <div class="datos">
-                        <i class="icono fas fa-mobile-alt"></i>
-                        <label>(+506)&nbsp;XXXX-XXXX</label>
-                    </div>
+                        <div class="datos">
+                            <i class="icono fas fa-mobile-alt"></i>
+                            <label>(+506)&nbsp;XXXX-XXXX</label>
+                        </div>
 
-                    <div class="datos">
-                        <i class="icono fas fa-envelope-open-text"></i>
-                        <label>Lorem_ipsum@sitamet.com</label>
+                        <div class="datos">
+                            <i class="icono fas fa-envelope-open-text"></i>
+                            <label>Lorem_ipsum@sitamet.com</label>
+                        </div>
                     </div>
+                    <!-- ***** Fin sección datos de contacto ***** -->
+                    
                 </div>
-                <!-- ***** Fin sección datos de contacto ***** -->
-                
+                                                                                                                                
                 <!-- ***** Inicio sección datos de copyright ***** -->
                 <div class="contenedorInformacion">
                     <div class="barraInfo">
@@ -156,7 +160,8 @@
                 <!-- ***** Fin sección datos de copyright *****-->   
                 
             </footer>
-            <!-- ***** Inicio sección pie de página ***** -->                         
+            <!-- ***** Inicio sección pie de página ***** -->    
+            
         </div>
                                                                         
         <!-- ***** Archivos javascript y CDN's ***** -->                            

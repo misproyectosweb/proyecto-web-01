@@ -7,9 +7,9 @@
         <title>Reflexión</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono_iglesia.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/iconoIglesia.png"/>
         <link href="librerias/normalize.css" rel="stylesheet" type="text/css"/>
         <link href="css/reflexiones.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -19,7 +19,7 @@
                 
                 <!-- ***** Inicio sección logotipo encabezado ***** -->
                 <div class="logo">
-                    <a href="index.php"><img src="imagenes/Logo_iglesia_color.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
+                    <a href="index.php"><img src="imagenes/LogoIglesiaColor.png" alt="Logo oficial de la iglesia Hacienda del Rey"/></a>
                     <a href="#" class="btnMenu" id="btnMenu"><i class="icono fas fa-bars"></i></a>
                 </div>
                 <!-- ***** Fin sección logotipo encabezado ***** -->
@@ -61,13 +61,13 @@
                         </ul>        
                         <p>Donec porttitor a libero in eleifend. Nunc hendrerit feugiat magna, eget ultrices neque ornare lacinia. Sed non felis eu enim pretium consequat. Integer faucibus interdum enim, quis tristique ex imperdiet sit amet. Proin purus sem, sollicitudin at diam at, pretium pretium ex. Fusce quis luctus purus. Cras rutrum, purus in malesuada iaculis, libero dolor sagittis ante, non tincidunt lacus mi sit amet sem. Pellentesque et mi in dolor vehicula blandit.</p>
                         <div class="textoGrande">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
+                            <h6>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien massa."</h6>
                         </div>
                         <p>Ut consectetur consequat eros, in pulvinar dui iaculis quis. Sed auctor nibh in magna venenatis, vestibulum lobortis felis vehicula. Praesent imperdiet convallis condimentum. Quisque in ligula consectetur elit ultricies rutrum. Sed sit amet orci vel leo consectetur mollis in non ipsum. Aliquam et venenatis dui, in egestas elit. Maecenas sagittis dapibus felis, non faucibus lacus bibendum quis.</p>
                         <p>Etiam commodo, mauris at pulvinar sollicitudin, ligula magna rutrum ante, eu commodo nibh risus ut elit. Praesent mollis quam dolor, sit amet efficitur libero convallis eget. Praesent ac ex consequat, imperdiet orci id, imperdiet justo. Maecenas pharetra lacus non consectetur condimentum. Vestibulum bibendum libero iaculis dui faucibus porttitor. Aliquam in finibus orci, eget imperdiet metus. Suspendisse faucibus tortor id neque rutrum consectetur. Vestibulum non sollicitudin ligula.</p>
                         <p>Vivamus gravida aliquet eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis ligula eu arcu placerat efficitur. Integer efficitur elementum maximus. Nam congue tristique elementum. Donec egestas massa nibh, eu porta velit ullamcorper eget. Nam nunc sem, convallis tincidunt lorem at, lobortis mollis neque.</p>
-                        <p>Maecenas dolor purus, condimentum sit amet tellus sed, rhoncus viverra arcu:</p>
                         <p>Praesent justo nisi, condimentum in rhoncus at, posuere non sapien. Phasellus quis consequat sapien, et finibus dui. Vivamus porttitor dui a bibendum posuere. Proin dictum quis felis ut tincidunt. Donec bibendum est tincidunt iaculis tincidunt. Praesent auctor, nisl in ullamcorper auctor, nulla dolor eleifend libero, vel molestie est elit quis libero. Nulla et sapien sed lorem iaculis cursus vitae in lectus. Curabitur sit amet enim a nibh euismod pulvinar et eget turpis. Sed condimentum mattis elementum. Nullam at lobortis risus. Morbi mattis, eros nec imperdiet efficitur, magna diam feugiat libero, eu varius elit libero id libero.</p>
+                        <p>Maecenas dolor purus, condimentum sit amet tellus sed, rhoncus viverra arcu:</p>                        
                         <div class="formatoNumeros">
                             <ol>
                                 <li>Phasellus sagittis, odio id pretium pellentesque, lacus eros cursus metus, ac porta enim ante in eros.</li>
@@ -77,7 +77,8 @@
                         </div>
                         <h3>Aliquam accumsan, tortor at tempus vehicula</h3>
                         <p>Praesent justo nisi, condimentum in rhoncus at, posuere non sapien: <b><q><cite>Phasellus quis consequat sapien, et finibus dui.</cite></q></b> Vivamus porttitor dui a bibendum posuere. Proin dictum quis felis ut tincidunt. Donec bibendum est tincidunt iaculis tincidunt. Praesent auctor, nisl in ullamcorper auctor, nulla dolor eleifend libero, vel molestie est elit quis libero. Nulla et sapien sed lorem iaculis cursus vitae in lectus. Curabitur sit amet enim a nibh euismod pulvinar et eget turpis. Sed condimentum mattis elementum. Nullam at lobortis risus. Morbi mattis, eros nec imperdiet efficitur, magna diam feugiat libero, eu varius elit libero id libero.</p>
-                        <p>Vivamus gravida aliquet eleifend:</p> <blockquote><q><cite>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis ligula eu arcu placerat efficitur.</cite></q></blockquote> <p>Integer efficitur elementum maximus. Nam congue tristique elementum. Donec egestas massa nibh, eu porta velit ullamcorper eget. Nam nunc sem, convallis tincidunt lorem at, lobortis mollis neque.</p>
+                        <p>Vivamus gravida aliquet eleifend:</p> <blockquote><q><cite>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis ligula eu arcu placerat efficitur.</cite></q></blockquote> 
+                        <p>Integer efficitur elementum maximus. Nam congue tristique elementum. Donec egestas massa nibh, eu porta velit ullamcorper eget. Nam nunc sem, convallis tincidunt lorem at, lobortis mollis neque.</p>
                         <p>Maecenas dolor purus, condimentum sit amet tellus sed, rhoncus viverra arcu:</p>
                         <div class="formatoLetras">
                             <ol>
@@ -90,7 +91,7 @@
                         <p>Etiam commodo, mauris at pulvinar sollicitudin, ligula magna rutrum ante, eu commodo nibh risus ut elit. Praesent mollis quam dolor, sit amet efficitur libero convallis eget. Praesent ac ex consequat, imperdiet orci id, imperdiet justo. Maecenas pharetra lacus non consectetur condimentum. Vestibulum bibendum libero iaculis dui faucibus porttitor. Aliquam in finibus orci, eget imperdiet metus. Suspendisse faucibus tortor id neque rutrum consectetur. Vestibulum non sollicitudin ligula.</p>
                         <p>Vivamus gravida aliquet eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis ligula eu arcu placerat efficitur. Integer efficitur elementum maximus. Nam congue tristique elementum. Donec egestas massa nibh, eu porta velit ullamcorper eget. Nam nunc sem, convallis tincidunt lorem at, lobortis mollis neque.</p>
                     </article>
-                </section>
+                </section>                
             </main>
             <!-- ***** Fin sección principal ***** -->                        
             

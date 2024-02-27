@@ -14,7 +14,7 @@ and open the template in the editor.
     box-sizing: border-box;    
 }
 body {
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Open Sans', sans-serif;   
 }
 :root {
     --colorAzul: #003958;
@@ -34,7 +34,7 @@ body {
     display: grid;
     
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(15, 10em);
+    grid-template-rows: repeat(17, 10em);
     
     grid-template-areas:
     "encabezado encabezado encabezado encabezado encabezado encabezado"
@@ -49,8 +49,10 @@ body {
     "contenido  contenido  contenido  contenido  contenido  contenido"
     "contenido  contenido  contenido  contenido  contenido  contenido"
     "contenido  contenido  contenido  contenido  contenido  contenido"
+    "contenido  contenido  contenido  contenido  contenido  contenido" 
     "contenido  contenido  contenido  contenido  contenido  contenido"    
-    "piepagina  piepagina  piepagina  piepagina  piepagina  piepagina"
+    "contenido  contenido  contenido  contenido  contenido  contenido" 
+    "piepagina  piepagina  piepagina  piepagina  piepagina  piepagina"    
     "piepagina  piepagina  piepagina  piepagina  piepagina  piepagina";
 }
 
@@ -59,20 +61,19 @@ body {
 .contenedor .encabezado {
     grid-area: encabezado;
                 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
     width: 100%;
     z-index: 50;
     background: linear-gradient(to right, #f5f5f5 0%, #b59a47 100%);        
     box-shadow: 0 0.75em 0.75em 0 rgba(0,0,0,0.5);           
 }
-.contenedor .encabezado .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
 .contenedor .encabezado .logo img {
-    width: 15.75%;
-    margin: 2.25em 1.25em;
+    width: 65%;
+    padding-left: 1em;    
 }
 
 /******************** Estilos contenidos de la página ********************/
@@ -82,7 +83,7 @@ body {
 
     display: grid;    
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 10em);
+    grid-template-rows: repeat(14, 10em);
             
     grid-template-areas:
     "titulos    titulos    titulos    titulos    titulos    titulos"
@@ -92,10 +93,12 @@ body {
     "textos     textos     textos     textos     textos     textos"
     "textos     textos     textos     textos     textos     textos"
     "textos     textos     textos     textos     textos     textos"
-    "textos     textos     textos     textos     textos     textos"    
-    "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"
+    "textos     textos     textos     textos     textos     textos" 
+    "textos     textos     textos     textos     textos     textos"
+    "textos     textos     textos     textos     textos     textos" 
     "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"
     "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"    
+    "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"  
     "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes";    
 }
 
@@ -109,7 +112,7 @@ body {
     justify-content: center;
     align-items: center;
         
-    background: url('../imagenes/imgCielo_2.jpg');
+    background: url('../imagenes/imgCielo.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,8 +151,8 @@ body {
     justify-content: center;
     align-items: center;
     
-    height: 65%;
-    width: 15%;    
+    height: 55%;
+    width: 20%;    
     text-decoration: none;    
     color: var(--colorAzul);
     transition: all ease .3s;
@@ -162,8 +165,12 @@ body {
     border-radius: 0.625em;
     cursor: pointer;
 }
-.contenido .menu .opcion {
-    font-size: 3.75em;    
+.contenido .menu .opcion {    
+    font-size: 3em;
+}
+.contenido .menu .tituloItem {
+    font-size: 1.25em;
+    margin-bottom: 0;
 }
 
 /******************** Estilos fondo y texto de visión ********************/
@@ -171,7 +178,7 @@ body {
 .contenedor .contenido .imagenFondo {
     grid-area: textos;
         
-    background: url('../imagenes/fondo_iglesia_4.jpg');
+    background: url('../imagenes/ImgIglesia_1.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center; 
@@ -189,7 +196,7 @@ body {
     font-weight: 600;
     text-align: center;
     line-height: 2em;    
-    background: rgba(0,0,0,0.5);    
+    background: rgba(0,0,0,0.3);    
     color: var(--colorBlanco);           
 /*    color: var(--colorDorado);           */
     
@@ -206,26 +213,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;    
-            
-    background-image: url('../imagenes/imgMuroPiedra_1.jpg');
+    align-items: center;
+    background-image: url('../imagenes/imgMuroPiedra.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
 }
 .contenedor-imagenes {
-    max-width: 55%;    
-    height: auto;
-    margin: 0 auto;
-    padding: 3.25em 2.5em;
-    position: absolute;
+    max-width: 55%;        
     z-index: 30;
 }
 .contenedor-imagenes .imgSlide {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;             
     border: 0.5em double var(--colorAzul);
     border-radius: 0.5em;
-    padding: 0.5em;
+    padding: 0.5em;        
 }
 .contenedor-imagenes .slick-list {
     margin: 0 2.5em;
@@ -240,10 +243,10 @@ body {
     text-align: center;
 }
 .contenedor-imagenes .flecha-previo {
-    left: 1%;
+    left: 0%;
 }
 .contenedor-imagenes .flecha-siguiente {
-    right: 1%;
+    right: 0%;
 }
 .flecha-previo:hover, .flecha-siguiente:hover {
     cursor: pointer;
@@ -251,7 +254,7 @@ body {
 }
 .contenedor-imagenes .slick-dots {
     position: absolute;
-    bottom: 0;
+    bottom: -7%;
     left: 0;
     width: 100%;
     text-align: center;
@@ -260,13 +263,13 @@ body {
     padding: 0;
 }
 .contenedor-imagenes .slick-dots li {
-    list-style: none;
-    width: 1em;
-    height: 1em;
-    background-color: var(--colorAzul);
-    border-radius: 50%;
-    display: inline-block;
+    display: inline-block;    
+    width: 0.65em;
+    height: 0.65em;
     margin: 0 0.35em;
+    background-color: var(--colorAzul);
+    border-radius: 50%;    
+    list-style: none;    
 }
 .contenedor-imagenes .slick-dots li.slick-active {
     background: var(--colorDorado);
@@ -278,40 +281,46 @@ body {
     margin-bottom: 0;
 }
 
-/******************** Estilos para el efecto de onda ********************/
-
-.contenedor .contenido .wave {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    
-    height: 30%;
-    position: relative;
-    top: -8.75em;
-    z-index: 10;             
-}
-
 /******************** Estilos para el pie de la página ********************/
 
 .contenedor .contenedorPiepagina {
     grid-area: piepagina;  
     
-    display: flex;    
-    flex-direction: row;
-    justify-content: space-between;    
-    align-items: center;
-    flex-wrap: wrap;    
-    
+    display: flex;             
+    flex-wrap: wrap;         
     background-color: var(--colorAzul);
     z-index: 20; 
 }
-.columna-logo, .columna-menu,
-.columna-redes, .columna-contacto {
-    width: 23%;
-    height: auto;        
+.contenedor .contenedorPiepagina .contenidoFooter {
+    display: flex;    
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.wave {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    bottom: 2.75em;    
+}
+.columna-menu, .columna-redes, .columna-contacto {
+    width: 25%;
+    margin-bottom: 1em;
+}
+.columna-logo {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    
+    width: 25%;
+}
+.columna-logo img {
+    width: 40%;
 }
 .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
-    margin-top: 0;
-    margin-bottom: 1.5em;
+    font-size: 1em;
+    margin-top: 0;    
     font-weight: 600;
     color: var(--colorDorado);
 }
@@ -320,20 +329,6 @@ body {
 .columna-contacto .datos a {
     color: var(--colorBlanco);
 }
-.columna-redes .redes, .columna-contacto .datos {
-    display: flex;
-    flex-direction: row;    
-    align-items: center;    
-}
-.columna-redes .redes .icono, .columna-contacto .datos .icono {
-    width: 1.25em;                                          
-    font-size: 2em;                                         
-    text-align: center;
-}
-.columna-redes .redes label, .columna-contacto .datos label,
-.columna-contacto .datos a {
-    margin-left: 1em;                                       
-}
 .columna-menu a, .columna-redes .redes a, .columna-contacto .datos a {    
     text-decoration: none;    
 }
@@ -341,323 +336,609 @@ body {
 .columna-contacto .datos a:hover {
     color: var(--colorDorado); 
 }
-.columna-redes .redes, .columna-contacto .datos {    
-    line-height: 3.5em;  
-}
-.columna-logo {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    margin: 0 1.25em; 
-}
-.columna-logo img {
-    width: 68%;
-}
 .columna-menu ul {
     display: flex;
     flex-direction: column;    
     align-items: flex-start;
-    margin: 0 1.25em; 
-    padding: 0;    
-    line-height: 2.65em;    
+    
+    font-size: 0.8em;
+    margin: 0 1em; 
+    padding-left: 0.75em;
+    line-height: 2em;       
+}
+.columna-redes .redes, .columna-contacto .datos {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;    
+}
+.columna-redes .redes .icono, .columna-contacto .datos .icono {
+    width: 1.25em;                                          
+    font-size: 1.25em;                                         
+    text-align: center;
+}
+.columna-redes .redes label, .columna-contacto .datos label,
+.columna-contacto .datos a {
+    margin-left: 1em;                                       
+}
+.columna-redes .redes, .columna-contacto .datos {        
+    font-size: 0.8em;
+    line-height: 2.75em;
 }
 .contenedorInformacion {
-    width: 100%;
-    height: 18%;   
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    
+    width: 100%;
+    height: 18%;           
     background: var(--colorAzul);
     border-top: 0.0625em solid var(--colorDorado);           
 }
 .barraInfo {
+    font-size: 0.8em;
     color: var(--colorDorado);
-}
-
-/******************** Estilos sección loader *********************************/
-
-.contenedorLoader {
-    background: var(--colorAlabaster);
-    position: fixed;
-    top: 0; 
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 100; 
-    transition: all 1.5s;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;    
 }
 
 /********************** Estilos para dispositivos móviles *********************/
 
-/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1280px */
-@media screen and (max-width: 1280px) {
+/* Dispositivos con orientación horizontal con una resolución de pantalla mayor a 1424px y menor que 1648px */
+@media screen and (min-width: 1424px) and (max-width: 1647.98px) {
     .contenedor {
-        grid-template-rows: repeat(15, 8em);		
+        grid-template-rows: repeat(17, 8em);
     }
     .contenedor .contenido {
-        grid-template-rows: repeat(12, 8em);
+        grid-template-rows: repeat(14, 8em);
     }
+    
+    /* Encabezado */
     .contenedor .encabezado .logo img {
-        width: 18.75%;
-        margin: 1.75em 1em;
+        width: 60%;
     }
-    .contenedor .contenido .textoTitulos p {        
-        margin: 0.5em 0;            
-    }    
+    
+    /* Texto bíblico */
+    .contenedor .contenido .textoTitulos p {
+        font-size: 1.25em;
+    }
+    
+    /* Menú de opciones */
+    .contenedor .contenido .menu .item {
+        width: 20%;
+        height: 55%;
+    }
     .contenido .menu .opcion {
-        font-size: 3.25em;
+        font-size: 2.5em;
     }
     .contenido .menu .tituloItem {
         font-size: 1.25em;
     }
-    .contenedor .contenido .imagenFondo .txtVision {             
-        font-size: 2.5em;                        
-    }
-    .contenedor-imagenes {
-        max-width: 69%;
-        padding: 2.5em;
-    }    
-    .contenedor-imagenes .flecha-previo,
-    .contenedor-imagenes .flecha-siguiente {        
-        font-size: 3.5em;        
-    }
-    .contenedor .contenido .wave {
-        top: -7.15em;
-    }
-    .contenedor .contenedorPiepagina {
-       justify-content: space-around; 
-    }
-    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {                
-        font-size: 1.2em;
-    }    
-    .columna-menu ul, .columna-redes .redes a,
-    .columna-contacto .datos label, .columna-contacto .datos a,
-    .contenedorInformacion {
-        font-size: 0.85em;        
-    }
-    .columna-redes .redes label, .columna-contacto .datos label,
-    .columna-contacto .datos a {
-        margin-left: 0.75em;                                       
-    }
-    .columna-logo img {
-        margin: 0 1em;
-    }
-    .columna-menu ul {
-        padding-left: 0.25em;           
-    }
-    .columna-redes .redes, .columna-contacto .datos {
-        line-height: 3em;
-    }
-    .columna-redes .redes .icono, .columna-contacto .datos .icono {
-        font-size: 1.5em;
-    }    
-}
-
-/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1024px */
-@media screen and (max-width: 1024px) {
-    .contenedor {
-        grid-template-rows: repeat(15, 6.45em);
-    }
-    .contenedor .contenido {
-        grid-template-rows: repeat(12, 6.45em);
-    }
-    .contenedor .encabezado .logo img {
-        width: 21.75%;
-        margin: 1.5em 1em;
-    }
-    .contenedor .contenido .textoTitulos p {        
-        font-size: 1.25em;          
-    }
-    .contenido .menu .opcion {
+    
+    /* Texto visión */
+    .contenedor .contenido .imagenFondo .txtVision {
         font-size: 2.75em;
     }
-    .contenido .menu .tituloItem {
-        font-size: 1em;
-    }
-    .contenedor .contenido .imagenFondo .txtVision {             
-        font-size: 2em;                        
-    }
+    
+    /* Carrusel de imágenes */
     .contenedor-imagenes {
-        max-width: 73%;
-        padding: 2em 2.5em;
-    }    
+        max-width: 55%;
+    }
     .contenedor-imagenes .flecha-previo,
-    .contenedor-imagenes .flecha-siguiente {        
-        font-size: 3em;        
+    .contenedor-imagenes .flecha-siguiente {
+        font-size: 3.75em;
     }
-    .contenedor-imagenes .slick-dots {        
-        bottom: 2%;        
+    .contenedor-imagenes .flecha-previo {
+        left: 3%;
     }
-    .contenedor-imagenes .slick-dots li {        
-        width: 0.75em;
-        height: 0.75em;        
+    .contenedor-imagenes .flecha-siguiente {
+        right: 3%;
     }
-    .contenedor .contenido .wave {
-        top: -5.75em;
+    .contenedor-imagenes .slick-dots {
+        bottom: -6%;
     }
-    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {                
-        font-size: 0.9em;
+    .contenedor-imagenes .slick-dots li {
+        width: 0.5em;
+        height: 0.5em;
     }
-    .columna-menu ul, .columna-redes .redes a,
-    .columna-contacto .datos label, .columna-contacto .datos a,
-    .contenedorInformacion {
-        font-size: 0.6em;        
+    .contenedor-imagenes .imgSlide {
+        padding: 0.25em;
+    }
+    
+    /* Footer */
+    .contenedor .contenedorPiepagina {
+        align-content: center;
+    }
+    .contenedor .contenedorPiepagina .wave {
+        bottom: 2.5em;
+    }
+    .columna-logo img {
+        width: 40%;
+    }
+    .columna-menu, .columna-redes, .columna-contacto {
+        width: 25%;
     }
     .columna-menu ul {
-        line-height: 3.1em;
+        font-size: 0.8em;
+        line-height: 1.95em;
+        padding-left: 0.75em;
     }
     .columna-redes .redes, .columna-contacto .datos {
+        font-size: 0.8em;
+        line-height: 2.6em;
+    }
+    .columna-redes .redes .icono, .columna-contacto .datos .icono {
+        font-size: 1.25em;
+    }
+    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
+        font-size: 1em;
+    }
+    .contenedorInformacion .barraInfo {
+        font-size: 0.8em;
+    }
+}
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla mayor a 1200px y menor que 1424px */
+@media screen and (min-width: 1200px) and (max-width: 1423.98px) {
+    .contenedor {
+        grid-template-rows: repeat(17, 8em);
+    }
+    .contenedor .contenido {
+        grid-template-rows: repeat(14, 8em);
+    }
+    
+    /* Encabezado */
+    .contenedor .encabezado .logo img {
+        width: 55%;
+    }
+    
+    /* Texto bíblico */
+    .contenedor .contenido .textoTitulos p {
+        font-size: 1.25em;
+    }
+    
+    /* Menú de opciones */
+    .contenedor .contenido .menu .item {
+        width: 20%;
+        height: 55%;
+    }
+    .contenido .menu .opcion {
+        font-size: 2.5em;
+    }
+    .contenido .menu .tituloItem {
+        font-size: 1.25em;
+    }
+    
+    /* Texto visión */
+    .contenedor .contenido .imagenFondo .txtVision {
+        font-size: 2.5em;
+    }
+    
+    /* Carrusel de imágenes */
+    .contenedor-imagenes {
+        max-width: 65%;
+    }
+    .contenedor-imagenes .flecha-previo,
+    .contenedor-imagenes .flecha-siguiente {
+        font-size: 3.75em;
+    }
+    .contenedor-imagenes .flecha-previo {
+        left: 3%;
+    }
+    .contenedor-imagenes .flecha-siguiente {
+        right: 3%;
+    }
+    .contenedor-imagenes .slick-dots {
+        bottom: -6%;
+    }
+    .contenedor-imagenes .slick-dots li {
+        width: 0.5em;
+        height: 0.5em;
+    }
+    .contenedor-imagenes .imgSlide {
+        padding: 0.25em;
+    }
+    
+    /* Footer */
+    .contenedor .contenedorPiepagina {
+        align-content: center;
+    }
+    .contenedor .contenedorPiepagina .wave {
+        bottom: 2.5em;
+    }
+    .columna-logo img {
+        width: 40%;
+    }
+    .columna-menu, .columna-redes, .columna-contacto {
+        width: 25%;
+    }
+    .columna-menu ul {
+        font-size: 0.8em;
+        line-height: 1.95em;
+        padding-left: 0.75em;
+    }
+    .columna-redes .redes, .columna-contacto .datos {
+        font-size: 0.8em;
+        line-height: 2.6em;
+    }
+    .columna-redes .redes .icono, .columna-contacto .datos .icono {
+        font-size: 1.25em;
+    }
+    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
+        font-size: 1em;
+    }
+    .contenedorInformacion .barraInfo {
+        font-size: 0.8em;
+    }
+}
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla mayor a 992px y menor que 1200px */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .contenedor {
+        grid-template-rows: repeat(17, 8em);
+    }
+    .contenedor .contenido {
+        grid-template-rows: repeat(14, 8em);
+    }
+    
+    /* Encabezado */
+    .contenedor .encabezado .logo img {
+        width: 50%;
+    }
+    
+    /* Texto bíblico */
+    .contenedor .contenido .textoTitulos p {
+        font-size: 1.15em;
+    }
+    
+    /* Menú de opciones */
+    .contenedor .contenido .menu .item {
+        width: 20%;
+        height: 55%;
+    }
+    .contenido .menu .opcion {
+        font-size: 2.5em;
+    }
+    .contenido .menu .tituloItem {
+        font-size: 1.25em;
+    }
+    
+    /* Texto visión */
+    .contenedor .contenido .imagenFondo .txtVision {
+        font-size: 2.25em;
+    }
+    
+    /* Carrusel de imágenes */
+    .contenedor-imagenes {
+        max-width: 75%;
+    }
+    .contenedor-imagenes .flecha-previo,
+    .contenedor-imagenes .flecha-siguiente {
+        font-size: 3em;
+    }
+    .contenedor-imagenes .flecha-previo {
+        left: 5%;
+    }
+    .contenedor-imagenes .flecha-siguiente {
+        right: 5%;
+    }
+    .contenedor-imagenes .slick-dots {
+        bottom: -7%;
+    }
+    .contenedor-imagenes .slick-dots li {
+        width: 0.5em;
+        height: 0.5em;
+    }
+    .contenedor-imagenes .imgSlide {
+        padding: 0.25em;
+    }
+    
+    /* Footer */
+    .contenedor .contenedorPiepagina {
+        align-content: center;
+    }
+    .contenedor .contenedorPiepagina .wave {
+        bottom: 2.5em;
+    }
+    .columna-logo img {
+        width: 40%;
+    }
+    .columna-menu, .columna-redes, .columna-contacto {
+        width: 25%;
+    }
+    .columna-menu ul {
+        font-size: 0.7em;
+        line-height: 1.8em;
+        padding-left: 0.75em;
+    }
+    .columna-redes .redes, .columna-contacto .datos {
+        font-size: 0.7em;
         line-height: 2.45em;
     }
     .columna-redes .redes .icono, .columna-contacto .datos .icono {
         font-size: 1.25em;
-    }    
+    }
+    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
+        font-size: 1em;
+    }
+    .contenedorInformacion .barraInfo {
+        font-size: 0.7em;
+    }
 }
 
-/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 768px */
-@media screen and (max-width: 768px) {
+/* Estilo para dispositivos con tamaño de pantalla mayor a 768px y menor que 992px */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
     .contenedor {
-        grid-template-rows: repeat(15, 5.55em);
-    }    
+        grid-template-rows: repeat(17, 6.45em);
+    }
     .contenedor .contenido {
-        grid-template-rows: repeat(12, 5.55em);
+        grid-template-rows: repeat(14, 6.45em);
     }
+    
+    /* Encabezado */
     .contenedor .encabezado .logo img {
-        width: 24.75%;
-        margin: 1em;
-    }    
-    .contenedor .contenido .textoTitulos p {        
-        font-size: 1em;          
+        width: 45%;
     }
-    .contenido .menu .item {
-        height: 60%;
+    
+    /* Texto bíblico */
+    .contenedor .contenido .textoTitulos p {
+        font-size: 1em;
+    }
+    
+    /* Menú de opciones */
+    .contenedor .contenido .menu .item {
+        width: 20%;
+        height: 55%;
     }
     .contenido .menu .opcion {
         font-size: 2.25em;
     }
     .contenido .menu .tituloItem {
-        font-size: 0.75em;
+        font-size: 1em;
     }
-    .contenedor .contenido .imagenFondo .txtVision {             
-        font-size: 1.5em;                        
+    
+    /* Texto visión */
+    .contenedor .contenido .imagenFondo .txtVision {
+        font-size: 1.75em;
     }
+    
+    /* Carrusel de imágenes */
     .contenedor-imagenes {
-        max-width: 85%;        
-    } 
+        max-width: 75%;
+    }
+    .contenedor-imagenes .flecha-previo,
+    .contenedor-imagenes .flecha-siguiente {
+        font-size: 2em;
+    }
+    .contenedor-imagenes .flecha-previo {
+        left: 5%;
+    }
+    .contenedor-imagenes .flecha-siguiente {
+        right: 5%;
+    }
+    .contenedor-imagenes .slick-dots {
+        bottom: -7%;
+    }
+    .contenedor-imagenes .slick-dots li {
+        width: 0.5em;
+        height: 0.5em;
+    }
     .contenedor-imagenes .imgSlide {
         padding: 0.25em;
     }
-    .contenedor-imagenes .flecha-previo,
-    .contenedor-imagenes .flecha-siguiente {        
-        font-size: 2.5em;        
-    } 
-    .contenedor-imagenes .flecha-previo {
-        left: 5%;                        
+    
+    /* Footer */
+    .contenedor .contenedorPiepagina {
+        align-content: center;
     }
-    .contenedor-imagenes .flecha-siguiente {
-        right: 5%;                        
+    .contenedor .contenedorPiepagina .wave {
+        bottom: 2.25em;
     }
-    .contenedor-imagenes .slick-list {        
-        margin: 0 2em;
+    .columna-logo, .columna-logo img {
+        display: none;
     }
-    .contenedor-imagenes .slick-dots {
-        bottom: 3%;
-    }
-    .contenedor-imagenes .slick-dots li {        
-        width: 0.5em;
-        height: 0.5em;        
-    }
-    .contenedor .contenido .wave {
-        top: -4.25em;
-    }
-    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {                
-        font-size: 0.75em;
-    }
-    .columna-redes .redes label, .columna-contacto .datos label,
-    .columna-contacto .datos a {
-        margin-left: 0.75em;                                       
-    }    
-    .columna-menu ul, .columna-redes .redes a,
-    .columna-contacto .datos label, .columna-contacto .datos a,
-    .contenedorInformacion {
-        font-size: 0.5em;        
+    .columna-menu, .columna-redes, .columna-contacto {
+        width: 25%;
     }
     .columna-menu ul {
-        padding-left: 0.5em; 
-        line-height: 2.5em;
+        font-size: 0.6em;
+        line-height: 1.8em;
+        padding-left: 0.75em;
     }
     .columna-redes .redes, .columna-contacto .datos {
-        line-height: 1.6em;
+        font-size: 0.6em;
+        line-height: 2.15em;
     }
     .columna-redes .redes .icono, .columna-contacto .datos .icono {
         font-size: 1em;
-    }     
+    }
+    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
+        font-size: 0.85em;
+    }
+    .contenedorInformacion .barraInfo {
+        font-size: 0.6em;
+    }
 }
 
-/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 576px */
-@media screen and (max-width: 576px) {
+/* Estilo para dispositivos con tamaño de pantalla mayor a 576px y menor que 768px */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
     .contenedor {
-        grid-template-rows: repeat(15, 4.3em);
+        grid-template-rows: repeat(17, 5.55em);
     }
     .contenedor .contenido {
-        grid-template-rows: repeat(12, 4.3em);
+        grid-template-rows: repeat(14, 5.55em);
     }
+    
+    /* Encabezado */
     .contenedor .encabezado .logo img {
-        width: 24.75%;
-        margin: 0.75em;
+        width: 40%;
     }
-    .contenedor .contenido .textoTitulos p {        
-        font-size: 0.75em;          
-    }    
+    
+    /* Texto bíblico */
+    .contenedor .contenido .textoTitulos p {
+        font-size: 0.85em;
+    }
+    
+    /* Menú de opciones */
+    .contenedor .contenido .menu .item {
+        width: 20%;
+        height: 55%;
+    }
     .contenido .menu .opcion {
         font-size: 1.75em;
     }
     .contenido .menu .tituloItem {
-        font-size: 0.55em;
+        font-size: 0.75em;
+        text-align: center;
     }
-    .contenedor .contenido .imagenFondo .txtVision {             
-        font-size: 1em;                        
-    }        
+    .contenedor .contenido .imagenFondo .txtVision {
+        font-size: 1.25em;
+    }
+    
+    /* Carrusel de imágenes */
     .contenedor-imagenes {
-        max-width: 90%;  
-        padding: 1.5em 2em;
-    } 
+        max-width: 80%;
+    }
     .contenedor-imagenes .flecha-previo,
-    .contenedor-imagenes .flecha-siguiente {        
-        font-size: 2em;        
-    } 
+    .contenedor-imagenes .flecha-siguiente {
+        font-size: 2em;
+    }
     .contenedor-imagenes .flecha-previo {
-        left: 7%;                        
+        left: 7%;
     }
     .contenedor-imagenes .flecha-siguiente {
-        right: 7%;                        
+        right: 7%;
     }
-    .contenedor-imagenes .slick-dots {        
-        bottom: 4%;        
+    .contenedor-imagenes .slick-dots {
+        bottom: -8%;
     }
-    .contenedor .contenido .wave {
-        top: -3.15em;
+    .contenedor-imagenes .slick-dots li {
+        width: 0.5em;
+        height: 0.5em;
     }
+    .contenedor-imagenes .imgSlide {
+        padding: 0.25em;
+    }
+    
+    /* Footer */
     .contenedor .contenedorPiepagina {
-       align-items: stretch;       
+        align-content: center;
     }
-    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {                
-        margin: 1.25em 0;
+    .contenedor .contenedorPiepagina .wave {
+        bottom: 2em;
     }
     .columna-logo, .columna-logo img {
         display: none;
-    }        
+    }
     .columna-menu, .columna-redes, .columna-contacto {
-        width: 30%;
-        padding-left: 0.5em;
-        padding-bottom: 0.5em;
-    }                
+        width: 25%;
+    }
     .columna-menu ul {
-        padding-left: 1em; 
-        line-height: 2.45em;
-    }    
+        font-size: 0.5em;
+        line-height: 1.65em;
+        padding-left: 0.75em;
+    }
+    .columna-redes .redes, .columna-contacto .datos {
+        font-size: 0.5em;
+        line-height: 2em;
+    }
+    .columna-redes .redes .icono, .columna-contacto .datos .icono {
+        font-size: 0.5em;
+    }
+    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
+        font-size: 0.75em;
+    }
+    .contenedorInformacion .barraInfo {
+        font-size: 0.5em;
+    }
+}
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 576px */
+@media screen and (max-width: 575.98px) {
+    .contenedor {
+        grid-template-rows: repeat(17, 4.3em);
+    }
+    .contenedor .contenido {
+        grid-template-rows: repeat(14, 4.3em);
+    }
+    
+    /* Encabezado */
+    .contenedor .encabezado .logo img {
+        width: 35%;
+    }
+    
+    /* Texto bíblico */
+    .contenedor .contenido .textoTitulos p {
+        font-size: 0.75em;
+    }
+    
+    /* Menú de opciones */
+    .contenedor .contenido .menu .item {
+        width: 20%;
+    }
+    .contenido .menu .opcion {
+        font-size: 1.75em;
+    }
+    .contenido .menu .tituloItem {
+        font-size: 0.75em;
+        text-align: center;
+    }
+    .contenedor .contenido .imagenFondo .txtVision {
+        font-size: 1.25em;
+    }
+    
+    /* Carrusel de imágenes */
+    .contenedor-imagenes {
+        max-width: 80%;
+    }
+    .contenedor-imagenes .flecha-previo,
+    .contenedor-imagenes .flecha-siguiente {
+        font-size: 2em;
+    }
+    .contenedor-imagenes .flecha-previo {
+        left: 7%;
+    }
+    .contenedor-imagenes .flecha-siguiente {
+        right: 7%;
+    }
+    .contenedor-imagenes .slick-dots {
+        bottom: -10%;
+    }
+    .contenedor-imagenes .slick-dots li {
+        width: 0.4em;
+        height: 0.4em;
+    }
+    .contenedor-imagenes .imgSlide {
+        padding: 0.25em;
+    }
+    
+    /* Footer */
+    .contenedor .contenedorPiepagina {
+        align-content: center;
+    }
+    .contenedor .contenedorPiepagina .wave {
+        bottom: 1.5em;
+    }
+    .columna-logo, .columna-logo img {
+        display: none;
+    }
+    .columna-menu, .columna-redes, .columna-contacto {
+        width: 25%;
+    }
+    .columna-menu ul {
+        font-size: 0.5em;
+        line-height: 1.5em;
+        padding-left: 0.75em;
+    }
+    .columna-redes .redes, .columna-contacto .datos {
+        font-size: 0.5em;
+        line-height: 1.85em;
+    }
+    .columna-redes .redes .icono, .columna-contacto .datos .icono {
+        font-size: 0.5em;
+    }
+    .columna-menu h2, .columna-redes h2, .columna-contacto h2 {
+        font-size: 0.65em;
+    }
+    .contenedorInformacion .barraInfo {
+        font-size: 0.5em;
+    }
 }
