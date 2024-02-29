@@ -38,12 +38,9 @@ A continuación se presentan algunas imágenes del sitio web brevemente descrito
 
 ![01  Inicio_1](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/8e00f6ee-9593-4ab2-8872-681fc7fffba2)
 **==========================================================================**
-**==========================================================================**
 ![01  Inicio_2](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/8131ebf5-92c1-45fc-93a8-90d5022f3f6b)
 **==========================================================================**
-**==========================================================================**
 ![01  Inicio_3](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/b87a3ef3-4873-46d3-a3d9-47e1e3df967f)
-**==========================================================================**
 **==========================================================================**
 ![02  quienessomos_1](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/01a4d711-7fb6-48ac-ae2d-68f6675a1b96)
 **==========================================================================**
@@ -96,7 +93,7 @@ A continuación se presentan algunas imágenes del sitio web brevemente descrito
 ![05  Contacto_6](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/c9f2cda5-0262-4055-aaca-73ee91e512de)
 **==========================================================================**
 ![05  Contacto_7](https://github.com/misproyectosweb/proyecto-web-01/assets/98922137/65bf947d-19be-464e-b347-0eb39ea9f2e4)
-
+**==========================================================================**
 
 
 
